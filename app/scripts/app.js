@@ -4,7 +4,8 @@ angular.module('personalApp', [
   'ngCookies',
   'ngResource',
   'ngSanitize',
-  'ngRoute'
+  'ngRoute',
+  'ui'
 ])
   .config(function ($routeProvider) {
     $routeProvider
