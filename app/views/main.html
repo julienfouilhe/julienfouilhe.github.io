@@ -1,0 +1,36 @@
+<div class="header text-center">
+      <img src="images/picture.jpg" alt="Julien Fouilhé picture" class="img-circle" style="max-width:120px" />
+  <h1>Julien Fouilhé</h1>
+    <p>
+        Young passionate developer currently studying at EPITECH, and soon leaving for Australia to study at the RMIT!
+    </p>
+        <div><a href="http://fr.linkedin.com/in/julienfouilhe/en">My Linkedin</a></div>
+        <div><a href="https://www.twitter.com/julienfouilhe">My Twitter</a></div>
+</div>
+
+<section class="panel panel-default">
+    <div class="panel-heading">
+        <h2 class="panel-title">Projects</h2>
+    </div>
+    <ul class="list-group">
+        <li class="list-group-item" ng-repeat="project in projects">
+            <div ng-show="project.url" class="pull-right"><a ng-href="{{project.url}}"><span class="glyphicon glyphicon-share-alt"></span> Access website</a></div>
+            <div>
+                <h3>{{project.name}} <small>{{project.state}}</small></h3>
+                <p class="lead" ng-show="project.leadline">{{project.leadline}}</p>
+                <p class="justify" ng-bind-html="project.description">
+                </p>
+                <ul>
+                    <li ng-repeat="action in project.actions">{{action}}</li>
+                </ul>
+                <p style="margin-top:10px;">
+                    <span ng-repeat="tag in project.tags"><span class="label" ng-class="{'label-danger': $even, 'label-primary': $odd}">{{tag}}</span> </span>
+                </p>
+            </div>
+        </li>
+    </ul>
+</section>
+
+<div class="footer">
+  <p>Made by <strong>Julien Fouilhé</strong> with <i>Yeoman, AngularJS, Bootstrap</i></p>
+</div>
