@@ -37,24 +37,24 @@ app.controller('MainCtrl', function ($scope, $location, $anchorScroll) {
             ],
             type: 'Personal'
           },
-        {
+          {
             name: 'Zappy',
             state: 'Finished',
             leadline: 'A game for developers',
             description: '<b>Zappy</b> is a project aimed at developers eager to develop an artificial intelligence. It\'s supposed to be online and everybody who developed an AI can launch their own if they know the server address.',
             actions: [
-                'Implement server protocol and commands to be able to connect every component of the subject (server, artificial intelligence and graphical client).',
-                'Develop the graphical client in Actionscript 3, which was aimed to be as professional as possible, and cross-platform. Made it available online, on Android and on iOS.',
-                'Make a short funny video to introduce the project.',
-                'Write the texts on the website to explain the project and how we did it.'
+              'Implement server protocol and commands to be able to connect every component of the subject (server, artificial intelligence and graphical client).',
+              'Develop the graphical client in Actionscript 3, which was aimed to be as professional as possible, and cross-platform. Made it available online, on Android and on iOS.',
+              'Make a short funny video to introduce the project.',
+              'Write the texts on the website to explain the project and how we did it.'
             ],
             url: 'http://zappy.fouilhe.fr',
             tags: [
-                'actionscript3', 'c++', 'c', 'minko'
+              'actionscript3', 'c++', 'c', 'minko'
             ],
             type: 'School'
-        },
-        {
+          },
+          {
             name: 'Babel',
             state: 'Finished',
             leadline: 'A Skype-like',
@@ -63,26 +63,22 @@ app.controller('MainCtrl', function ($scope, $location, $anchorScroll) {
             actions: [
                 'Write the protocol\'s RFC which would be used by both groups to communicate with the server.',
                 'Make the server.'
-            ],
-            tags: [
+              ],
+              tags: [
                 'c++11', 'boost (ASIO)', 'sqlite3', 'qt5 (qml)', 'portaudio', 'opus', 'rtp protocol'
-            ],
-            type: 'School'
-        }
-        ];
+              ],
+              type: 'School'
+            }
+          ];
   });
 
-app.controller('ContactCtrl', function($scope, $http) {
+app.controller('ContactCtrl', function($scope) {
 
     $scope.sendMessage = function() {
-        console.log($scope.message);
-//        $http.post('http://julien.fouilhe.fr/send', data).success(successCallback);
-      };
+    };
 
     $scope.reset = function() {
         $scope.message = {};
-        console.log("reset");
-        console.log($scope.message);
       };
 
     $scope.reset();
