@@ -1,78 +1,18 @@
-<!--<div style="height:50px">
-    <button class="btn btn-primary pull-right" ng-click="gotoContact()" ng-show="!dispContactForm">Contact</button>
-</div>-->
-<div class="row clearfix"></div>
-<div class="header text-center">
-      <img src="images/picture.jpg" alt="Julien Fouilhé picture" class="img-circle" style="max-width:120px" />
-  <h1>Julien Fouilhé</h1>
-    <p>
-        Young passionate developer currently studying at EPITECH, and soon leaving for Australia to study at the RMIT!
-    </p>
-        <div><a href="http://fr.linkedin.com/in/julienfouilhe/en">My Linkedin</a></div>
-        <div><a href="https://www.twitter.com/julienfouilhe">My Twitter</a></div>
-        <div><a href="https://www.github.com/julienfouilhe">My Github</a></div>
-        <div><a href="http://stackoverflow.com/users/1405208/julien-fouilhe">My Stack Overflow</a></div>
-</div>
+<div id="sidebar">
+  <div id="avatar"></div>
+  <div class="networks">
+    <div class="network" id="github">
+      <a href="https://github.com/julienfouilhe" target="_blank" title="Github of Julien Fouilhé"></a>
+    </div>
+    <div class="network" id="linkedin">
+      <a href="http://au.linkedin.com/in/julienfouilhe/" target="_blank" title="Linkedin of Julien Fouilhé"></a>
+    </div>
+    <div class="network" id="stackoverflow">
+      <a href="http://stackoverflow.com/users/1405208/julien-fouilhé" target="_blank" title="Stackoverflow of Julien Fouilhé"></a>
+    </div>
+  </div>
+  <div id="sidebar-content">
 
-<!-- <div id="contact" style="height:30px;" class="row clearfix"></div>
-<section class="panel panel-danger" ng-show="dispContactForm">
-    <div class="panel-heading">
-        <i class="glyphicon glyphicon-remove pull-right" ng-click="dispContactForm = false" style="cursor: pointer" />
-        <h2 class="panel-title">Contact</h2>
-    </div>
-    <div class="panel-body">
-        <form ng-controller="ContactCtrl" name="contactForm" novalidate>
-            <div class="form-group">
-                <label for="name">Your name</label>
-                <span class="label label-warning" ng-show="contactForm.name.$error.required">Required</span>
-                <span class="label label-danger" ng-show="contactForm.name.$error.minlength">Too short</span>
-                <span class="label label-success" ng-show="contactForm.name.$valid">Good!</span>
-                <input type="text" class="form-control" id="name" name="name" ng-model="message.name" placeholder="Enter name" required ng-minlength="4" />
-            </div>
-            <div class="form-group">
-                <label for="email">Your email</label>
-                <span class="label label-warning" ng-show="contactForm.email.$error.required">Required</span>
-                <span class="label label-danger" ng-show="contactForm.email.$error.email">Invalid email</span>
-                <span class="label label-success" ng-show="contactForm.email.$valid">Good!</span>
-                <input type="email" class="form-control" id="email" name="email" ng-model="message.email" placeholder="Enter email" required />
-            </div>
-            <div class="form-group">
-                <label for="message">Your message</label>
-                <span class="label label-warning" ng-show="contactForm.message.$error.required">Required</span>
-                <span class="label label-danger" ng-show="contactForm.message.$error.minlength">Too short (minimum 30 characters)</span>
-                <span class="label label-success" ng-show="contactForm.message.$valid">Good!</span>
-                <textarea class="form-control" id="message" name="message" ng-model="message.text" placeholder="Enter message" required ng-minlength="30"></textarea>
-            </div>
-            <div class="form-group">
-                <button class="btn btn-danger" ng-click="sendMessage()">Send</button>
-            </div>
-        </form>
-    </div>
-</section>
--->
-<section class="panel panel-default" ng-repeat="type in types">
-    <div class="panel-heading">
-        <h2 class="panel-title">{{type}} projects</h2>
-    </div>
-    <ul class="list-group">
-        <li class="list-group-item" ng-repeat="project in projects | filter:{type:type}">
-            <div ng-show="project.url" class="pull-right"><a ng-href="{{project.url}}"><span class="glyphicon glyphicon-share-alt"></span> Access website</a></div>
-            <div>
-                <h3>{{project.name}} <small>{{project.state}}</small></h3>
-                <p class="lead" ng-show="project.leadline">{{project.leadline}}</p>
-                <p class="justify" ng-bind-html="project.description">
-                </p>
-                <ul>
-                    <li ng-repeat="action in project.actions">{{action}}</li>
-                </ul>
-                <p style="margin-top:10px;">
-                    <span ng-repeat="tag in project.tags"><span class="label" ng-class="{'label-danger': $even, 'label-primary': $odd}">{{tag}}</span> </span>
-                </p>
-            </div>
-        </li>
-    </ul>
-</section>
-
-<div class="footer">
-  <p>Made by <strong>Julien Fouilhé</strong> with <i>Yeoman, AngularJS, Bootstrap</i></p>
+  </div>
+  <div id="contact"><a href="mailto:julien.fouilhe@gmail.com">Contact</a></div>
 </div>

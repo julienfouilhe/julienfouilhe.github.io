@@ -1,6 +1,7 @@
 $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 
 @import 'sass-bootstrap/lib/bootstrap';
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400,700,800,300);
 
 h3 {
   margin-top:0;
@@ -15,8 +16,114 @@ h3 {
 
 /* Space out content a bit */
 body {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    margin:0;
+    background-color: #F2B707;
+}
+
+$sidebar-bg: #1F2326;
+
+#sidebar {
+  background-color: $sidebar-bg;
+  height:100vh;
+  width:20%;
+  position:relative;
+}
+
+#avatar {
+  background-image: url(/images/picture.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  width:100%;
+  height:300px;
+  background-size: 100%;
+}
+
+@mixin button-lighter($bg:$primary-color) {
+  background-color: $bg;
+  -webkit-transition-delay: 0s;
+  -webkit-transition-duration: 0.5s;
+  -webkit-transition-property: all;
+  -webkit-transition-timing-function: ease;
+  &:hover,
+  &:focus { background-color: lighten($bg, 10%); }
+}
+
+@mixin button-darker($bg:$primary-color) {
+  background-color: $bg;
+  -webkit-transition-delay: 0s;
+  -webkit-transition-duration: 0.5s;
+  -webkit-transition-property: all;
+  -webkit-transition-timing-function: ease;
+  &:hover,
+  &:focus { background-color: darken($bg, 10%); }
+}
+
+
+.network {
+  float: left;
+  width:33%;
+  height:50px;
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size: auto 80%;
+}
+
+.network > a {
+  width:100%;
+  height:100%;
+  display:block;
+}
+
+.network:nth-child(2) {
+  width:34%;
+}
+
+#github.network {
+  @include button-lighter(#333333);
+  background-image: url(/images/networks/github.png);
+}
+
+#twitter.network {
+  @include button-lighter(#55ACEE);
+  background-image: url(/images/networks/twitter.png);
+}
+
+#linkedin.network {
+  @include button-lighter(#4875B4);
+  background-image: url(/images/networks/linkedin.png);
+}
+
+#stackoverflow.network {
+  @include button-lighter(#FD9827);
+  background-image: url(/images/networks/stackoverflow.png);
+}
+
+$contact-height: 50px;
+
+#contact {
+  position:absolute;
+  bottom: 0;
+  width: 100%;
+  height: $contact-height;
+  font-size: 20px;
+  line-height: $contact-height;
+  text-align: center;
+  font-family: "Open Sans", "Arial", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  @include button-darker(#FFFFFF);
+}
+
+#sidebar-content
+{
+}
+
+#contact > a {
+  width:100%;
+  height:100%;
+  display:block;
+  color: $sidebar-bg;
+  text-decoration: none;
 }
 
 .lead {
@@ -78,7 +185,7 @@ body {
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 1200px) {
     .container {
-        max-width: 1160px;
+        max-width: 100%;
     }
 
     /* Remove the padding we set earlier */
