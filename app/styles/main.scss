@@ -113,11 +113,6 @@ h1 {
   background-image: url(/images/networks/github.png);
 }
 
-#twitter.network {
-  @include button-lighter(#55ACEE);
-  background-image: url(/images/networks/twitter.png);
-}
-
 #linkedin.network {
   @include button-lighter(#4875B4);
   background-image: url(/images/networks/linkedin.png);
@@ -143,10 +138,16 @@ h1 {
   height:100%;
 }
 
-#twitter a {
+#twitter span {
   display:inline-block;
   text-align:center;
   vertical-align:middle;
+}
+
+#twitter span img {
+  position: relative;
+  top:-2px;
+  margin-right: 4px;
 }
 
 $contact-height: 50px;
