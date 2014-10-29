@@ -13,11 +13,24 @@ app.controller('MainCtrl', function ($scope, $location, $anchorScroll) {
     $scope.dispContactForm = false;
     $scope.types = [ 'Personal', 'School' ];
     $scope.projects = [
+      {
+        name: 'Needbook',
+        state: 'Pending',
+        leadline: 'An app for every person who has to touch a book someday',
+        description: '<b>Needbook</b> is a project willing to take the electronical book to the next step...',
+        tags: [
+            'iOS', 'objective-c', 'node.js', 'c++', 'android', 'angular.js', 'ruby'
+          ],
+          type: 'Personal'
+        },
         {
           name: 'Icebreaker',
-          state: 'Pending',
+          state: 'Finished',
           leadline: 'An application for those who want to keep it down',
-          description: '<b>Icebreaker</b> is an original social network... Coming soon.',
+          description: 'Currently there are several messenger apps out there and probably more than you even use. The most common used ones are Whatsapp and Line, lately telegram, threema and several more. They all do the same: Chat with your friends, send pictures etc. But what if you could write with people you\'ve never met before? People from all over the world? People who are speaking different languages, but still have the same interest as you have? Or do you just want to chat with people in a language you are interested in?<br/><br/>\
+            This is where Icebreaker helps you! We created a messenger, where you can chat with random people from all over the world, send photos, jokes, get to know each other and probably become friends. As we respect your privacy, you\'ll get a random identity each time you start a new chat. As soon as you want to reveal your real identity to your chat partner, you can just do it by one tap.<br/><br/>\
+            So try out Icebreaker and master a new language, find friends and maybe even your next vacation in another country. Possibilities are endless if you are open for new people in your life.',
+          url: 'http://www.icebreakerapp.im',
           tags: [
               'iOS', 'objective-c', 'node.js', 'express'
             ],
