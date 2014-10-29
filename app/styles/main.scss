@@ -30,24 +30,53 @@ $sidebar-width: 360px;
   position:absolute;
   left: $sidebar-width;
   right:0;
+  max-height: 100vh;
+  overflow: scroll;
 }
 
 #content #header {
   background-color: #FFFFFF;
   padding: 20px 30px;
   padding-top:30px;
+  position:relative;
 }
 
-#header h1 {
+#content h1 {
   padding: 0px;
   margin: 0px;
   font-size: 21pt;
-  font-weight: bold;
+  font-weight: 700;
+}
+
+#content #projects {
+  margin: 30px;
+}
+
+#content #projects h1, #content #projects h2 {
+  font-weight: 300;
+}
+
+#projects .project {
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+#projects .project p {
+  border-left: solid 1px #8C310F;
+  padding-left: 20px;
+}
+
+h2 .headline {
+  font-size: 12pt;
 }
 
 h1 {
   margin:0;
   padding:0;
+}
+
+h2 {
+  font-size: 16pt;
 }
 
 #avatar {
@@ -173,24 +202,24 @@ $contact-height: 50px;
   padding-bottom: 60px;
 }
 
-ul {
+#sidebar-content ul {
   border-left: solid 1px #8C310F;
   list-style-type: none;
 }
 
-ul li {
+#sidebar-content ul li {
   margin: 20px 0;
 }
 
-ul.less_spaced li {
+#sidebar-content ul.less_spaced li {
   margin: 0;
 }
 
-ul p {
+#sidebar-content ul p {
   margin: 0;
 }
 
-ul h2 {
+#sidebar-content ul h2 {
   font-size: 14pt;
   color: #D9D9D9;
   margin: 0;
@@ -202,4 +231,12 @@ ul h2 {
   display: block;
   color: $sidebar-bg;
   text-decoration: none;
+}
+
+.project a {
+  color: #8C310F;
+}
+
+.project a:hover {
+  color: #40140A;
 }

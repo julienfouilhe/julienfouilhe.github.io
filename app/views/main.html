@@ -33,7 +33,7 @@
       </li>
     </ul>
   </div>
-  <div id="contact"><a href="mailto:julien.fouilhe@gmail.com">Contact</a></div>
+  <div id="contact"><a href="mailto:julien.fouilhe@gmail.com">Contact me!</a></div>
 </div>
 <div id="content">
   <div id="header">
@@ -45,5 +45,16 @@
     </div>
     <h1>Julien Fouilhé</h1>
     <p>Melbourne, Australia</p>
+  </div>
+  <div id="projects">
+    <h1>Projects</h1>
+    <div class="project" ng-repeat="project in projects">
+      <h2><span ng-bind="project.name"></span> <span class="headline" ng-bind="project.leadline"></span></h2>
+      <p class="justified" ng-bind-html="project.description"></p>
+      <ul>
+        <li ng-repeat="action in project.actions" ng-bind="action"></li>
+      </ul>
+      <aside ng-if="project.url"><a ng-href="{{project.url}}">Access website</a></aside>
+    </div>
   </div>
 </div>
