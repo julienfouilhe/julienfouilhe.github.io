@@ -60,6 +60,7 @@ app.controller('MainCtrl', function ($scope, $location, $anchorScroll) {
               'Make a short funny video to introduce the project.',
               'Write the texts on the website to explain the project and how we did it.'
             ],
+            url: 'http://www.youtube.com/playlist?list=PLwHK5Fs4jNXKuJpJjpFE5UPQk-cRt40Lo',
             tags: [
               'actionscript3', 'c++', 'c', 'minko'
             ],
