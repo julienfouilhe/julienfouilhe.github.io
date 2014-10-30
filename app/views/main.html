@@ -35,7 +35,7 @@
   </div>
   <div id="contact"><a href="mailto:julien.fouilhe@gmail.com">Contact me!</a></div>
 </div>
-<div id="content" class="col-xs-12 col-sm-8 col-lg-9">
+<div id="content" class="col-xs-12 col-sm-8 col-lg-6">
   <div id="header">
     <div id="twitter">
       <span>
@@ -56,5 +56,16 @@
       </ul>
       <aside ng-if="project.url"><a ng-href="{{project.url}}" target="_blank">Access website</a></aside>
     </div>
+  </div>
+</div>
+<div id="career" class="col-xs-offset-0 col-xs-12 col-sm-12 col-lg-3">
+  <h1>Career</h1>
+  <div ng-repeat="item in career">
+    <h2>
+      <span ng-bind="item.title"></span><br/>
+      <span class="headline"><span ng-bind="item.company"></span> - <span ng-bind="item.location"></span></span>
+    </h2>
+    <p ng-bind-html="item.description"></p>
+    <aside ng-bind="item.frame"></aside>
   </div>
 </div>

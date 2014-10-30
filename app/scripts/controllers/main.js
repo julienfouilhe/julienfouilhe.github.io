@@ -81,6 +81,31 @@ app.controller('MainCtrl', function ($scope, $location, $anchorScroll) {
               type: 'School'
             }
           ];
+    $scope.career = [
+      {
+        title: 'Cloud developer',
+        company: 'Mobile Devices',
+        location: 'Paris, France',
+        frame: 'March - July 2014',
+        description: 'Work with the server team to imagine what the next version of the cloud architecture will be. The goal is to study the different existing solutions to see what\'s the most adapted to MDI and then implement a solution capable to handle large sets of data and furnish statistics about them.<br/>\
+          Ruby on rails, Ruby, Redis, distribution, cloud architecture, message queues, databases...'
+      },
+      {
+        title: 'Epitech Teaching Assistant',
+        company: 'Epitech',
+        location: 'Montpellier, France',
+        frame: 'February 2013 - March 2014',
+        description: 'Give courses and advices to Epitech students, during my own scholarship at Epitech, write reports on students issues, watch over them during tests, correct students projects and give a grade.<br/>\
+          Epitech thinks the best way to improve global students level is exchange between students. To do so, they hire some of their students as assistants, which I am part of, to help every student needing help.'
+      },
+      {
+        title: 'Web developer',
+        company: 'Fruition Sciences',
+        location: 'Montpellier, France',
+        frame: 'July 2012 - January 2013',
+        description: 'Improved the homemade PHP framework to add translation functionality and different timezones handling, improved the GIS application in order to offer a better user experience thanks to a timeline made in Javascript and displaying additional informations on a Google map, organized two events for winemakers eager to share their experience, one in France and one in California, creating the web page and using Eventbrite API, etc...'
+      }
+    ];
   });
 
 app.controller('ContactCtrl', function($scope) {

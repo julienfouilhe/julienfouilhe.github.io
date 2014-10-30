@@ -43,18 +43,22 @@ $sidebar-width: 360px;
   position:relative;
 }
 
-#content h1 {
+h1 {
   padding: 0px;
   margin: 0px;
   font-size: 21pt;
-  font-weight: 700;
+  font-weight: 300;
 }
 
 #content #projects {
   margin: 30px;
 }
 
-#content #projects h1, #content #projects h2 {
+#content #header h1 {
+  font-weight: 700;
+}
+
+h2 {
   font-weight: 300;
 }
 
@@ -202,11 +206,16 @@ $contact-height: 50px;
   padding: 30px 30px;
   color: #A1A1A1;
   padding-bottom: 60px;
+  padding-top:15px;
 }
 
-#sidebar-content ul {
+#sidebar-content ul, #career h2 {
   border-left: solid 1px #8C310F;
   list-style-type: none;
+}
+
+#career h2 {
+  padding-left: 20px;
 }
 
 #sidebar-content ul li {
@@ -217,11 +226,11 @@ $contact-height: 50px;
   margin: 0;
 }
 
-#sidebar-content ul p {
+ul p {
   margin: 0;
 }
 
-#sidebar-content ul h2 {
+ul h2 {
   font-size: 14pt;
   color: #D9D9D9;
   margin: 0;
@@ -243,8 +252,21 @@ $contact-height: 50px;
   color: #40140A;
 }
 
-// @media screen {
-//   #sidebar {
-//     min-width: $sidebar-width;
-//   }
-// }
+#career {
+  background-color: #40140A;
+  min-height: 100vh;
+  color: #D9D9D9;
+  padding: 30px;
+  text-align: justify;
+}
+
+#career div aside {
+  text-align:right;
+}
+
+@media (min-width: 767px) {
+  #content, #career {
+    max-height: 100vh;
+    overflow-y: auto;
+  }
+}
