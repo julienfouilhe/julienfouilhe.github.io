@@ -56,9 +56,7 @@ app.controller('MainCtrl', function ($scope, $location, $anchorScroll) {
             description: '<b>Zappy</b> is a project aimed at developers eager to develop an artificial intelligence. It\'s supposed to be online and everybody who developed an AI can launch their own if they know the server address.',
             actions: [
               'Implement server protocol and commands to be able to connect every component of the subject (server, artificial intelligence and graphical client).',
-              'Develop the graphical client in Actionscript 3, which was aimed to be as professional as possible, and cross-platform. Made it available online, on Android and on iOS.',
-              'Make a short funny video to introduce the project.',
-              'Write the texts on the website to explain the project and how we did it.'
+              'Develop the graphical client in Actionscript 3, which was aimed to be as professional as possible, and cross-platform. Made it available online, on Android and on iOS.'
             ],
             url: 'http://www.youtube.com/playlist?list=PLwHK5Fs4jNXKuJpJjpFE5UPQk-cRt40Lo',
             tags: [
