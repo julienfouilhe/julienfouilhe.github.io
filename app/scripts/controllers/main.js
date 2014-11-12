@@ -17,7 +17,8 @@ app.controller('MainCtrl', function ($scope, $location, $anchorScroll) {
         name: 'Needbook',
         state: 'Pending',
         leadline: 'An app for every person who has to touch a book someday',
-        description: '<b>Needbook</b> is a project willing to take the electronical book to the next step...',
+        description: '<b>Needbook</b> is a project willing to take the electronical book to the next step...<br/>
+        You can see my work on the <a href="https://github.com/needbook/">Github</a> and particularly on the <a href="https://github.com/needbook/scattr">Scattr</a> repository at the moment!',
         url: 'https://github.com/needbook/',
         tags: [
             'iOS', 'objective-c', 'node.js', 'c++', 'android', 'angular.js', 'ruby'
