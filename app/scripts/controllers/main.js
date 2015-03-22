@@ -83,6 +83,13 @@ app.controller('MainCtrl', function ($scope, $location, $anchorScroll) {
     $scope.career = [
       {
         title: 'Cloud developer',
+        company: 'Blippar',
+        location: 'Long Beach, USA & Melbourne, Australia',
+        frame: 'November 2014 - Now',
+        description: 'Develop a Visual Search browser which will enable you to have more informations about what is arround you, hence satisfying your everyday curiosity.'
+      },
+      {
+        title: 'Cloud developer',
         company: 'Mobile Devices',
         location: 'Paris, France',
         frame: 'March - July 2014',
