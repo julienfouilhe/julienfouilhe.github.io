@@ -86,7 +86,7 @@ app.controller('MainCtrl', function ($scope, $location, $anchorScroll) {
         company: 'Blippar',
         location: 'Long Beach, USA & Melbourne, Australia',
         frame: 'November 2014 - Now',
-        description: 'Develop a Visual Search browser which will enable you to have more informations about what is arround you, hence satisfying your everyday curiosity.'
+        description: 'Develop a Visual Search browser which will enable you to have more informations about what is around you, satisfying your everyday curiosity.'
       },
       {
         title: 'Cloud developer',
