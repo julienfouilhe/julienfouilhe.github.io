@@ -25,6 +25,17 @@ app.controller('MainCtrl', function ($scope, $location, $anchorScroll) {
           ],
           type: 'Personal'
         },
+      {
+        name: 'Flipendo',
+        state: 'Finished',
+        leadline: 'Distributed video transcoder',
+        description: '<b>Flipendo</b> is a distributed video transcoder. It takes a video file, separates it in multiple chunks which will then be transcoded by multiple workers installed on multiple servers. The file chunks are then merged together again and the user can download the transcoded file.',
+        url: 'https://github.com/flipendo/',
+        tags: [
+            'aws', 'docker', 'go', 'rabbitmq', 'node.js', 'angular.js'
+          ],
+          type: 'School'
+        },
         {
           name: 'Icebreaker',
           state: 'Finished',
