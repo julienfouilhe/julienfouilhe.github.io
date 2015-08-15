@@ -12,6 +12,7 @@ ls -l
 echo "Removing some of them..."
 rm -rf node_modules app .tmp .sass-cache
 echo "New list"
+echo "julien.fouilhe.fr" > CNAME
 ls -l
 git add .
 git commit -m "Deploy website"
