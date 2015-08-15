@@ -8,9 +8,14 @@ git checkout --orphan gh-pages
 rm -rf /tmp/website-dist && mv dist/ /tmp/website-dist/
 git rm -rf .
 mv /tmp/website-dist/* .
-rm -rf node_modules
+echo "Files to be added"
+ls -l
+echo "Removing some of them..."
+rm -rf node_modules app .tmp .sass-cache
+echo "New list"
+ls -l
 git add .
 git commit -m "Deploy website"
 git push github gh-pages
 git checkout master
-rm -rf bower_components && node_modules && mv /tmp/website-components/* .
+rm -rf bower_components node_modules && mv /tmp/website-components/* .
