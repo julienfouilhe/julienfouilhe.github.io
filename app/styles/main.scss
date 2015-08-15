@@ -86,7 +86,7 @@ h2 {
 }
 
 #avatar {
-  background-image: url(../images/picture.jpg);
+  background-image: url(/images/picture.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   width:100%;
@@ -146,17 +146,17 @@ h2 {
 
 #github.network {
   @include button-lighter(#333333);
-  background-image: url(../images/networks/github.png);
+  background-image: url(/images/networks/github.png);
 }
 
 #linkedin.network {
   @include button-lighter(#4875B4);
-  background-image: url(../images/networks/linkedin.png);
+  background-image: url(/images/networks/linkedin.png);
 }
 
 #stackoverflow.network {
   @include button-lighter(#FD9827);
-  background-image: url(../images/networks/stackoverflow.png);
+  background-image: url(/images/networks/stackoverflow.png);
 }
 
 #twitter:before {
